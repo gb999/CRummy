@@ -1,0 +1,11 @@
+@startuml Sequence
+Player1 --> Server: ready
+Player2 --> Server: ready
+Server --> Player1: start Game
+Server --> Player2: start Game
+
+Server --> Player1: Start turn
+Player1 --> Server: Draw from deck/discard pile
+Player1 --> Server: Discard + End turn
+Server --> Player1: Start turn / Invalid board 
+@enduml

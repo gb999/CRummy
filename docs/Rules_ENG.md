@@ -51,3 +51,4 @@ The first player to empty their hand wins the game.
 - TYPE OF GAME: Rummy
 
 - AUDIENCE: Family, Adults
+

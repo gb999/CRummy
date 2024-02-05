@@ -1,45 +1,15 @@
+use std::marker::PhantomData;
 
-enum Suit {
-    Hearts,
-    Tiles,
-    Clover,
-    Pikes
-}
+use deckofcards::*; 
 
-enum Card {
-    Number(Suit, u8), // number between 2-10 TODO: make number type 
-    Jack(Suit),
-    Queen(Suit),
-    King(Suit),
-    Ace(Suit),
-    Joker(Suit)
-}
-
-struct Deck {
-    cards: Vec<Card>,
-}
-
-impl Default for Deck {
-    /// Fills deck wit 2 decks of cards.
-    fn default() -> Self {
-        todo!(); 
-    }
-}
-
-impl Deck {
-    /// Draw a card 
-    fn draw(&mut self) -> Card {
-        todo!()
-    }
-}
 
 struct Player {
-    cards: Vec<Card>,
+    hand: Hand,
 }
 
 impl Player {
-    fn new(cards: Vec<Card>) -> Player {
-        Player {cards}
+    fn new(hand: Hand) -> Player {
+        Player {hand}
     }
 }
 
